@@ -1,0 +1,97 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;
+    width: 100%; 
+}
+
+.container .cabecalho{
+    font-size: 70px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.dados-cont {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.form {
+    --background: #d3d3d3;
+    --input-focus: #2d8cf0;
+    --font-color: #323232;
+    --font-color-sub: #666;
+    --bg-color: #fff;
+    --main-color: #323232;
+    padding: 20px;
+    background: var(--background);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 15px;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    width: 900px;
+    height: 600px;
+    position: relative;
+}
+
+.form h1{
+    overflow-wrap: break-word;
+    max-width: 600px;
+    margin-left: 3px;
+}
+
+.form .precoVenda{
+    margin-top: 20px;
+    margin-bottom: 100px;
+    font-size: 80px;
+}
+
+.form .descricao{
+    font-size: 30px;
+    overflow-wrap: break-word;
+    max-width: 800px; 
+}
+
+.cod-stl{
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding: 5px 10px;
+    margin-top: 5px;
+    outline: none;
+    position: absolute;
+    bottom: 20px; /* Espaçamento da parte inferior */
+    left: 20px;   /* Espaçamento da esquerda */
+    width: 93%;
+}
+
+
+.form .header { /* Estiliza o cabeçalho */
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form .header img {
+    max-width: 250px;
+    height: auto;
+    margin-right: 20px;
+}
